@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let emojis: Array<String> = ["👻", "🎃", "🦇","🧛","⚰️","🪄","🔮","🧿","🦄","🍭","🧙","🧌"]
+    let emojis = ["👻", "🎃", "🦇","🧛","⚰️","🪄","🔮","🧿","🦄","🍭","🧙","🧌"]
     @State var cardCount = 4
     
     var body: some View {
@@ -21,7 +21,7 @@ struct ContentView: View {
         }
         .padding()
     }
-    
+     
     var cards: some View {
         // creates a vertically scrollable collection of views
         // lazy implies that the views are only created when SwiftUI needs to display them
